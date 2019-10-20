@@ -1,0 +1,47 @@
+.hole-outer {
+  display: inline-block;
+  position: relative;
+  width: 360px;
+  margin: 70px;
+}
+
+.hole {
+  width: 100%;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  z-index: 1000;
+}
+
+.mole {
+  width: 280px;
+  position: absolute;
+  top: 150px;
+  left: 40px;
+  z-index: 1001;
+}
+
+.mask {
+  position: absolute;
+  display: block;
+  background-image: url('/assets/images/hole/mask.png') !important;
+  width: 100%;
+  z-index: 1002;
+}
+
+.mask-lower {
+  display: block;
+  position: absolute;
+  top: 150px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 400px;
+  background-color: #48a9f8;
+  z-index: 1002;
+}
+
+.hidden-attribute {
+  display: none;
+}

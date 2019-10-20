@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: sans-serif;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.container {
+    background-color: #48a9f8;
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    margin: 0px;
+}
+
+.inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    overflow: hidden;
+}
+
+.apng {
+  width: 100%;
+}

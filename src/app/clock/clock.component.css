@@ -1,0 +1,71 @@
+/*
+  timer
+*/
+
+.clock .outline {
+  position: absolute;
+  top: -37px;
+  left: -17px;
+  z-index: 1000;
+  width: 120px;
+}
+
+.clock {
+  overflow: visible;
+  display: block;
+  position: relative;
+
+  width: 120px;
+  height: 120px;
+  z-index: 1200;
+}
+
+.timer-wrapper {
+  width: 81px;
+  height: 81px;
+  position: relative;
+  background: #48a9f8;
+}
+
+.pie {
+  width: 50%;
+  height: 100%;
+  transform-origin: 100% 50%;
+  position: absolute;
+  background: #e98ebb;
+  border: 5px solid #e98ebb);
+}
+
+.spinner {
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  z-index: 200;
+  border-right: none;
+}
+
+.filler {
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  z-index: 100;
+  border-left: none;
+
+  left: 50%;
+  opactity: 0;
+}
+
+.timer-mask {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: 300;
+  opacity: 1;
+  background: inherit;
+
+}
+
+@keyframes rota {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes opa {
+  0% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}

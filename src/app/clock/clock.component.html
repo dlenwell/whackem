@@ -1,0 +1,20 @@
+<div class="clock">
+  <img class="outline" src="/assets/images/clock/outline.png">
+  <div class="timer-wrapper">
+    <div class="spinner pie"></div>
+    <div class="filler pie"></div>
+    <div class="timer-mask"></div>
+  </div>
+</div>
+
+<style>
+  .spinner {
+      animation: rota 30s linear infinite;
+  }
+  .filler {
+      animation: opa 30s steps(1, end) infinite reverse;
+  }
+  .timer-mask {
+      animation: opa 30s steps(1, end) infinite;
+  }
+</style>

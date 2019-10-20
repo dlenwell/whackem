@@ -1,0 +1,28 @@
+
+/*
+  stacks
+ */
+.points {
+
+}
+
+.point {
+
+  background-color: #e98ebb;
+  margin-top: 12px !important;
+  margin-left: 16px !important;
+  padding: 0px !important;
+  width: 109px;
+  height: 9px;
+  border-radius: 2px;
+}
+
+.points .bin{
+  position: absolute;
+  bottom: 0px;
+  height: 45px;
+  width: 126px;
+  border-left: 8px solid white;
+  border-right: 8px solid white;
+  border-bottom: 8px solid white;
+}

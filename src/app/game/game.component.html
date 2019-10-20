@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="inner">
+    <div id="fader"></div>
+    <div id="page-container" (resized)="reportSize($event)">
+      <div id="very-specific-design" class="page_content"
+           (resized)="onResized($event)"
+           (ng-init)="onResized($event)" >
+        <p>
+          Empower the marketer, free the designer.
+        </p>
+
+        <div class="molerow one">
+          <app-mole
+            (reportPoint)="gamePoint($point)"
+            myid='one'>
+          </app-mole>
+          <app-mole
+            (reportPoint)="gamePoint($point)"
+            myid='two'>
+          </app-mole>
+          <app-mole
+            (reportPoint)="gamePoint($point)"
+            myid='three'>
+          </app-mole>
+        </div>
+
+        <div class="molerow two">
+          <app-mole
+            (reportPoint)="gamePoint($point)"
+            myid='four'>
+          </app-mole>
+          <app-mole
+            (reportPoint)="gamePoint($point)"
+            myid='five'>
+          </app-mole>
+        </div>
+
+        <div class="molerow three">
+          <app-mole
+            (reportPoint)="gamePoint($point)"
+            myid='six'>
+          </app-mole>
+        </div>
+
+        <img class="logo" src="/assets/images/logo.png">
+
+        <app-clock id='clock'></app-clock>
+
+        <app-points id='points'></app-points>
+      </div>
+    </div>
+  </div>
+</div>
+<app-console (reportInput)="gameInput($event)"></app-console>
